@@ -1,6 +1,10 @@
-from langchain.document_loaders import PyPDFLoader, DirectoryLoader
+# from langchain.document_loaders import PyPDFLoader, DirectoryLoader
+from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
+# from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
+
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_openai.embeddings import OpenAIEmbeddings
 
@@ -54,3 +58,8 @@ def check_index_exists(pc, index_name):
         return stats.total_vector_count > 0
     return False
     
+
+# Deleting all vectors from the "namespace"
+# index = pc.Index(index_name)
+# index.delete(deleteAll=True)
+
