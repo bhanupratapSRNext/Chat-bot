@@ -43,7 +43,6 @@ def download_hugging_face_embeddings():
 
 
 
-
 def check_index_exists(pc, index_name):
     indexes = pc.list_indexes()
     # Check if index exists

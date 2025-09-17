@@ -9,6 +9,7 @@ index_name=os.getenv('pinecone_index_name')
 pc = Pinecone(api_key=PINECONE_API_KEY)
 
 
+
 def create_pinecone_index():
     try:
         pc.create_index(

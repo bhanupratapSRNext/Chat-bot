@@ -6,6 +6,7 @@ pc = Pinecone(
         api_key=os.environ.get("PINECONE_API_KEY")
     )
 
+
 # List all indexes
 indexes = pc.list_indexes()
 print(indexes)
